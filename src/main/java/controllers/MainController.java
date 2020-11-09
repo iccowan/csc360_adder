@@ -29,8 +29,17 @@ public class MainController
     @FXML
     void onCalcClick(ActionEvent event) 
     {
+    	try
+    	{
     	counterModel.addNums(Integer.valueOf(textField1.getText()), 
     			Integer.valueOf(textField2.getText()));
+    	}
+    	catch(Exception e){}
+    	finally
+    	{
+    		textField1.setText("");
+    		textField2.setText("");
+    	}
     }
     
     public void setModel(CounterModel newModel)

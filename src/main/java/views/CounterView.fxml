@@ -25,14 +25,14 @@
          <children>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                <children>
-                  <TextField fx:id="textField1" />
+                  <TextField id="textField1" fx:id="textField1" />
                   <Label text="+" />
-                  <TextField fx:id="textField2" />
+                  <TextField id="textField2" fx:id="textField2" />
                   <Label text="=" />
-                  <Label fx:id="sumLabel" text="10" />
+                  <Label id="sumLabel" fx:id="sumLabel" text="10" />
                </children>
             </HBox>
-            <Button fx:id="calcButton" mnemonicParsing="false" onAction="#onCalcClick" text="Calculate!" />
+            <Button id="calcButton" fx:id="calcButton" mnemonicParsing="false" onAction="#onCalcClick" text="Calculate!" />
          </children>
       </VBox>
    </center>
